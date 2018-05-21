@@ -1,0 +1,241 @@
+/** hide nav menu icons on mobile **/
+
+@media screen and (max-width: 575px) {
+  .dashboard-icon, .account-icon, .feedback-icon {
+    display: none;
+  }
+}
+
+body {
+  background-color: #f6f8f9;
+  height: 100%;
+  width: 100%;
+}
+
+/*NAVIGATION*/
+
+.nav-logo {
+  width: 156.137pt;
+  height: 24.152pt;
+}
+
+.navigation {
+  background-color: white;
+  min-width: 785px;
+}
+
+.nav-link {
+  color: #707584;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.dashboard-icon {
+  width: 13.212pt;
+  height: 11.006pt;
+  margin-top: 10px;
+}
+
+.account-icon {
+  width: 10.841pt;
+  height: 12.679pt;
+  margin-top: 9px;
+}
+
+.feedback-icon {
+  width: 13.584pt;
+  height: 10.427pt;
+  margin-top: 12px;
+}
+
+/*CALL TO ACTION*/
+
+.card {
+  padding-top: 50px;
+  border-radius: 10px;
+  background-color: white;
+  width: 558px;
+}
+
+.cta {
+  padding-top: 150px;
+  padding-bottom: 30px;
+  min-width: 785px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 43px;
+  color: #707584;
+}
+
+p {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14pt;
+  color: #555a67;
+}
+
+.present {
+  text-align: center;
+}
+
+.present {
+  position: absolute;
+  bottom: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  width: 67pt;
+  height: 54pt;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+table {
+  color: #555a67;
+  font-family: Roboto;
+}
+
+.labels {
+  /* display: block; */
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.labels input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #77c04e;
+  border-radius: 3px;
+  background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+
+.labels:hover input~.checkmark {
+  background-color: white;
+}
+
+/* When the checkbox is checked, add a green background */
+
+.labels input:checked~.checkmark {
+  background-color: #77c04e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.labels input:checked~.checkmark:after {
+  display: inline;
+}
+
+/* Style the checkmark/indicator */
+
+.labels .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-radius: 1px;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.crown {
+  padding-top: 15px;
+}
+
+.email {
+  padding-top: 15px;
+}
+
+.checkbox-1 {
+  display: block;
+}
+
+/*GIVEAWAY LINKS*/
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+.links {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-width: 785px;
+}
+
+.bottom-links {
+  font-size: 17px;
+  color: #77c04e;
+  font-family: Roboto;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 280pt;
+  display: block;
+  background-color: white;
+  min-width: 785px;
+  padding-top: 50px;
+}
+
+.footer-links {
+  font-family: Montserrat;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.buy-link {
+  color: #77c04e;
+}
+
+.bottom-logo {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.copyright {
+  padding-top: 60px;
+}
+
+.family-links {
+  color: #77c04e;
+}
