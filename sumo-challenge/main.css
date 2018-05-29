@@ -12,6 +12,18 @@ body {
   width: 100%;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 /*NAVIGATION*/
 
 .nav-logo {
@@ -22,24 +34,32 @@ body {
 .navigation {
   background-color: white;
   min-width: 785px;
+  /* height: 81pt; */
+  padding-top: 26px;
+  padding-right: 25px;
+  /* margin-right: 18px; */
 }
 
 .nav-link {
   color: #707584;
+  font-size: 12pt;
   font-family: Montserrat;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .dashboard-icon {
   width: 13.212pt;
   height: 11.006pt;
   margin-top: 10px;
+  /* margin-left: 60px; */
 }
 
 .account-icon {
   width: 10.841pt;
   height: 12.679pt;
   margin-top: 9px;
+  /* margin-left: 90px; */
 }
 
 .feedback-icon {
@@ -48,26 +68,43 @@ body {
   margin-top: 12px;
 }
 
+button {
+  /* width: 276.52pt; */
+  /* height: 26.933pt; */
+  font-style: Montserrat;
+  font-size: 12pt;
+  font-weight: bold;
+  /* padding-bottom: 15px;
+  padding-left: 100px; */
+}
+
+.navbar-toggler {
+  width: 60px;
+}
+
 /*CALL TO ACTION*/
 
 .card {
-  padding-top: 50px;
-  border-radius: 10px;
+  padding-top: 30px;
+  /* border-style: solid; */
+  border-radius: 30px;
   background-color: white;
-  width: 558px;
+  width: 557.826pt;
+  height: 636.966pt;
 }
 
 .cta {
   padding-top: 150px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   min-width: 785px;
+  /* height: 919.691pt; */
 }
 
 h2 {
   text-align: center;
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 43px;
+  font-size: 43pt;
   color: #707584;
 }
 
@@ -75,19 +112,18 @@ p {
   text-align: center;
   font-family: Roboto;
   font-weight: normal;
-  font-size: 14pt;
+  font-size: 17pt;
   color: #555a67;
 }
 
 .present {
-  text-align: center;
-}
-
-.present {
   position: absolute;
-  bottom: 84%;
+  bottom: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 184pt;
+  height: 121pt;
+  text-align: center;
 }
 
 .arrow {
@@ -101,10 +137,20 @@ p {
 table {
   color: #555a67;
   font-family: Roboto;
+  font-size: 17pt;
+  background: #FFFFFF;
+  background: rgba(255, 255, 255, 1);
+  /* border-style: none; */
+  /* border-bottom-style: dashed: */
 }
 
+/* td {
+  padding-top: 40px;
+} */
+
 .labels {
-  /* display: block; */
+  display: block;
+  border-bottom: 1px;
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -120,6 +166,7 @@ table {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 /* Create a custom checkbox */
@@ -128,9 +175,10 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
-  border: 1px solid #77c04e;
+  width: 21.5pt;
+  height: 21.5pt;
+  border: 1.5pt solid;
+  border-color: #EDF0F3;
   border-radius: 3px;
   background-color: white;
 }
@@ -145,6 +193,7 @@ table {
 
 .labels input:checked~.checkmark {
   background-color: #77c04e;
+  border-color: #77c04e;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -164,10 +213,10 @@ table {
 /* Style the checkmark/indicator */
 
 .labels .checkmark:after {
-  left: 6px;
-  top: 2px;
+  left: 10px;
+  top: 4px;
   width: 7px;
-  height: 13px;
+  height: 16px;
   border: solid white;
   border-radius: 1px;
   border-width: 0 2px 2px 0;
@@ -176,17 +225,89 @@ table {
   transform: rotate(45deg);
 }
 
-.crown {
-  padding-top: 15px;
+/* i {
+  width: 11.576 pt;
+  height: 42.296 pt;
+  align-items: center;
+} */
+
+.fa-facebook-f {
+  color: #475994;
+  vertical-align: middle;
 }
 
-.email {
-  padding-top: 15px;
+.fa-facebook-messenger {
+  color: #5383FA;
+  vertical-align: middle;
+}
+
+.fa-twitter {
+  color: #60A9E9;
+  vertical-align: middle;
+}
+
+.crown {
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+.fa-envelope {
+  padding-top: 20px;
+  vertical-align: middle;
 }
 
 .checkbox-1 {
   display: block;
+  /* vertical-align: middle; */
 }
+
+.checkbox {
+  top: 20px;
+  vertical-align: middle;
+}
+
+/* .table>thead>tr>th {
+  border-bottom: 2px solid red;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  border-top: 1px solid red;
+} */
+
+/* .primary {
+  border-bottom-color: 2px solid green;
+
+} */
+
+/* .table {
+  border-bottom-color: #000000;
+} */
+
+/* .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  border-bottom-color: #000000;
+  border-top-color: #000000;
+} */
+
+/* .table {
+  @table-border-color: black;
+} */
+
+/* tr {
+  border: 3px solid red;
+} */
+
+/* .table {
+  background: #FFFFFF;
+  background: rgba(255, 255, 255, 1);
+} */
+
+/* tr {
+  border: 2px solid rgba(255, 255, 255, .5);
+} */
+
+/* tr {
+  border: 2px solid rgba(230, 245, 230, );
+} */
 
 /*GIVEAWAY LINKS*/
 
@@ -196,13 +317,13 @@ li {
 }
 
 .links {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50pt;
+  padding-bottom: 50pt;
   min-width: 785px;
 }
 
 .bottom-links {
-  font-size: 17px;
+  font-size: 17pt;
   color: #77c04e;
   font-family: Roboto;
 }
@@ -214,7 +335,7 @@ footer {
   display: block;
   background-color: white;
   min-width: 785px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .footer-links {
@@ -230,12 +351,24 @@ footer {
 .bottom-logo {
   text-align: center;
   padding-top: 80px;
+  /* vertical-align: middle; */
+  /* width: 106.738pt;
+  height: 16.511pt; */
 }
 
 .copyright {
   padding-top: 60px;
+  font-family: Roboto;
+  font-size: 11pt;
+}
+
+.family {
+  font-family: Roboto;
+  font-size: 11pt;
 }
 
 .family-links {
+  font-family: Roboto;
+  font-size: 11pt;
   color: #77c04e;
 }

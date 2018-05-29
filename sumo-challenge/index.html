@@ -3,11 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>KingSumo</title>
+  <script src="https://use.fontawesome.com/744a286f44.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -15,33 +20,38 @@
 
   <!-- ///////////////// NAVIGATION //////////////// -->
 
-  <div class=".container">
-    <div class=".container navigation">
+  <div class=".container-fluid">
+
+    <div class=".container-fluid navigation">
       <nav class="navbar navbar-expand-sm navbar-light bg-white">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <img class="nav-logo" src="/Users/roberttorres/sumo-challenge/images/Asset 1.svg">
-        <a class="navbar-brand">
+
+
+        <a class="">
+        <img class="nav-logo" src="/Users/roberttorres/sumo-challenge/images/Asset 1.png">
           </a>
         <div class="collapse navbar-collapse justify-content-end" id="collapse_target">
           <ul class="navbar-nav">
-            <img class="dashboard-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 7.svg">
+            <img class="dashboard-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 7.png">
             <li class="nav-item">
               <a class="nav-link" href="#">Dashboard</a>
             </li>
-            <img class="account-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 10@1x.svg">
+            <img class="account-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 8.png">
             <li class="nav-item">
               <a class="nav-link" href="#">Account</a>
             </li>
-            <img class="feedback-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 9.svg">
+            <img class="feedback-icon" src="/Users/roberttorres/sumo-challenge/images/Asset 9.png">
             <li class="nav-item">
               <a class="nav-link" href="#">Feedback</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Logout</a>
             </li>
+
             <button type="button" class="btn btn-success">Buy Now</button>
+            </button>
           </ul>
         </div>
       </nav>
@@ -50,20 +60,40 @@
 
   <!-- ///////////////// CALL TO ACTIONS //////////////// -->
 
-  <div class=".container cta">
-    <div class="card container-fluid shadow-sm rounded" style="height:560.966pt;">
+
+
+  <div class=".container-fluid cta">
+    <div class="card container">
       <div class="present">
-        <img class="" style="height: 121pt; width:184pt;" src="/Users/roberttorres/sumo-challenge/images/Asset 5.svg" alt="">
+        <img class="" src="/Users/roberttorres/sumo-challenge/images/Present-2.png" alt="">
       </div>
       <div class="card-body">
         <h2>Congratulations!</h2>
         <p>Can you believe this??? Your giveaway is aliiiiive!<br> Now here comes the best part promoting it!</p>
         <div class="arrow container">
-          <img src="/Users/roberttorres/sumo-challenge/images/Asset 4.svg" alt="">
+          <img src="/Users/roberttorres/sumo-challenge/images/Asset 4.png" alt="">
         </div>
+        <!--
+        <section style="display: table;">
+          <header style="display: table-row;">
+            <div style="display: table-cell;"> <label class="labels checkbox-1">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label></div>
+            <div style="display: table-cell;">Share on facebook</div>
+            <div style="display: table-cell;"></div>
+
+          </header>
+          <div style="display: table-row;">
+            <div style="display: table-cell;"></div>
+            <div style="display: table-cell;"></div>
+            <div style="display: table-cell;"></div>
+          </div>
+        </section> -->
+
         <table class="table">
           <tbody>
-            <tr>
+            <tr class="primary">
               <td scope="col">
                 <label class="labels checkbox-1">
                 <input type="checkbox">
@@ -73,7 +103,7 @@
               <td scope="col">Share on Facebook</td>
               <td scope="col"></td>
               <td scope="col">
-                <img src="/Users/roberttorres/sumo-challenge/images/Fill 1@1x.svg" alt="">
+                <i class="fab fa-facebook-f fa-lg"></i>
               </td>
             </tr>
           </tbody>
@@ -88,7 +118,7 @@
               <td scope="col">Send a message</td>
               <td scope="col"></td>
               <td scope="col">
-                <img src="/Users/roberttorres/sumo-challenge/images/Asset-lightning.svg" alt="">
+                <i class=" fab fa-facebook-messenger fa-lg"></i>
               </td>
             </tr>
           </tbody>
@@ -103,7 +133,7 @@
               <td scope="col">Tweet about it</td>
               <td scope="col"></td>
               <td scope="col">
-                <img src="/Users/roberttorres/sumo-challenge/images/twitter-svg.svg" alt="">
+                <i class="fab fa-twitter fa-lg"></i>
               </td>
             </tr>
           </tbody>
@@ -117,13 +147,15 @@
               </td>
               <td scope="col">Send a link</td>
               <td scope="col"></td>
-              <td scope="col"><img src="/Users/roberttorres/sumo-challenge/images/Link.svg" alt=""></td>
+              <td scope="col">
+                <i class="fas fa-link fa-lg"></i>
+              </td>
             </tr>
           </tbody>
           <tbody>
             <tr>
               <td scope="col">
-                <label class="labels">
+                <label class="labels checkbox">
                 <input type="checkbox">
                 <span class="checkmark"></span>
                 </label>
@@ -131,14 +163,14 @@
               <td class="share" scope="col">Use Sumo to promote this giveaway on your website</td>
               <td scope="col"></td>
               <td scope="col">
-                <img class="crown" src="/Users/roberttorres/sumo-challenge/images/sumo-logo-svg.svg" alt="">
+                <img class="crown" src="/Users/roberttorres/sumo-challenge/images/sumo-icon.png" alt="">
               </td>
             </tr>
           </tbody>
           <tbody>
             <tr>
               <td scope="col">
-                <label class="labels checkbox-1">
+                <label class="labels">
                 <input type="checkbox">
                 <span class="checkmark"></span>
                 </label>
@@ -151,14 +183,16 @@
           <tbody>
             <tr>
               <td scope="col">
-                <label class="labels lab">
-              <input class="checker" type="checkbox">
+                <label class="labels checkbox">
+              <input type="checkbox">
                 <span class="checkmark"></span>
                 </label>
               </td>
               <td scope="col">Send by email using one of our awesome templates</td>
               <td scope="col"></td>
-              <td scope="col"> <img class="email" src="/Users/roberttorres/sumo-challenge/images/email.svg"></td>
+              <td scope="col">
+                <i class="fas fa-envelope fa-lg"></i>
+              </td>
             </tr>
             <tr>
               <td scope="col"></td>
@@ -171,6 +205,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- ///////////////// GIVEAWAY LINKS //////////////// -->
 
@@ -210,9 +245,9 @@
         </li>
       </ul>
       <div class="bottom-logo">
-        <img class="" src="/Users/roberttorres/sumo-challenge/images/Asset 1.svg" alt="" style="width: 107pt; height: 17pt;">
+        <img src="/Users/roberttorres/sumo-challenge/images/Asset 1.png" alt="" style="width: 106.738pt; height: 16.511pt;">
         <div class="copyright">© 2017 Sumo Group, Inc. All rights reserved.</div>
-        <div class="">Part of the Sumo family with <a class="family-links" href="#">Sumo.com,</a><a class="family-links" href="#">BriefcaseHQ,</a><a class="family-links" href="#">AppSumo.</a>
+        <div class="family">Part of the Sumo family with <a class="family-links" href="#">Sumo.com,</a><a class="family-links" href="#">BriefcaseHQ,</a><a class="family-links" href="#">AppSumo.</a>
         </div>
       </div>
     </footer>
