@@ -27,8 +27,11 @@ html {
 /*NAVIGATION*/
 
 .nav-logo {
-  width: 156.137pt;
-  height: 24.152pt;
+  /* width: 156.137pt;
+  height: 24.152pt; */
+  width: 150pt;
+  height: 20pt;
+  margin-left: 10pt;
 }
 
 .navigation {
@@ -251,6 +254,13 @@ table {
   vertical-align: middle;
 }
 
+.embed {
+  vertical-align: middle;
+  width: 20pt;
+  height: 18pt;
+  /* color: grey; */
+}
+
 .fa-envelope {
   padding-top: 20px;
   vertical-align: middle;
@@ -265,49 +275,6 @@ table {
   top: 20px;
   vertical-align: middle;
 }
-
-/* .table>thead>tr>th {
-  border-bottom: 2px solid red;
-}
-
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-  border-top: 1px solid red;
-} */
-
-/* .primary {
-  border-bottom-color: 2px solid green;
-
-} */
-
-/* .table {
-  border-bottom-color: #000000;
-} */
-
-/* .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-  border-bottom-color: #000000;
-  border-top-color: #000000;
-} */
-
-/* .table {
-  @table-border-color: black;
-} */
-
-/* tr {
-  border: 3px solid red;
-} */
-
-/* .table {
-  background: #FFFFFF;
-  background: rgba(255, 255, 255, 1);
-} */
-
-/* tr {
-  border: 2px solid rgba(255, 255, 255, .5);
-} */
-
-/* tr {
-  border: 2px solid rgba(230, 245, 230, );
-} */
 
 /*GIVEAWAY LINKS*/
 
