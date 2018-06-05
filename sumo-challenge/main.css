@@ -121,7 +121,7 @@ p {
 
 .present {
   position: absolute;
-  bottom: 80%;
+  bottom: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 184pt;
@@ -257,8 +257,7 @@ table {
 .embed {
   vertical-align: middle;
   width: 20pt;
-  height: 18pt;
-  /* color: grey; */
+  height: 15pt;
 }
 
 .fa-envelope {
